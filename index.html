@@ -8,7 +8,7 @@
       TIMER: 0
     </div>
     <center>
-    <a class="button" href="javascript:(function () {var a = document.createElement('script');a.src = 'Scripts/openWin.js'; document.body.appendChild(a);}());"><b>Open Window</b></a>
+    <a class="button" href="javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/AshtonDavies/locked-mode-hack/Scripts/openWin.js'; document.body.appendChild(a);}());"><b>Open Window</b></a>
     <a class="button" style="display: none;" id="startTimer" onmousedown="win.focus();" href="javascript:clearInterval(tickTimer); timer = 3; update(); var tickTimer = setInterval('tick()', 1000); function tick() {timer -= 1; if (timer <= 0) {clearInterval(tickTimer); win.close();} update();}"><b>Start Timer</b></a>
     <span>
       Screen captures are blocked as a part of Locked Mode. Install a chrome extension for screen captures.
