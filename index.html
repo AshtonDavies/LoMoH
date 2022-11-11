@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;">
+  <head>
+    <title>Window</title>
+  </head>
+  <body onbeforeunload="win.close();">
+    <div id="timer">
+      TIMER: 0
+    </div>
+    <center>
+    <a class="button" href="javascript:(function () {var a = document.createElement('script');a.src = 'Scripts/openWin.js'; document.body.appendChild(a);}());"><b>Open Window</b></a>
+    <a class="button" style="display: none;" id="startTimer" onmousedown="win.focus();" href="javascript:clearInterval(tickTimer); timer = 3; update(); var tickTimer = setInterval('tick()', 1000); function tick() {timer -= 1; if (timer <= 0) {clearInterval(tickTimer); win.close();} update();}"><b>Start Timer</b></a>
+    <span>
+      Screen captures are blocked as a part of Locked Mode. Install a chrome extension for screen captures.
+    </span>
+    </center>
+    <a style="position: absolute; right: 10px; top: 10px; background: url(https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png) no-repeat" href="https://docs.google.com/forms/d/1-jGRjB6LfdQz6EZRcf_Gkc9uIEHvUCDIaFk63UFszis/edit#:~:text=Section 2 of " target="_blank">&nbsp&nbsp&nbsp&nbsp&nbspTutorial</a>
+    <em style="position: absolute; right: 10px; bottom: 10px;">Made by Ashton Davies&nbsp<a href="https://github.com/AshtonDavies/locked-mode-hack" target="_blank">View On Github</a></em>
+    <input autofocus="true" onfocusout="this.focus();" onkeydown="return false;"></input>
+  </body>
+  <style>
+    .button {
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 5px;
+      color: black;
+      background-color: lightgray;
+      font-family: Arial;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .button:hover {
+      filter: drop-shadow(0px 0px 1px black);
+    }
+    .button:active {
+      filter: drop-shadow(0px 0px 2px black);
+    }
+    span {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      padding: 2px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: lightgray;
+      border-radius: 10px;
+    }
+    input {
+      opacity: 0;
+    }
+  </style>
+</html>

@@ -1,0 +1,1 @@
+win = window.open('https://docs.google.com/forms/u/0/d/e/1FAIpQLSf5EYwrSUjmQhBOasMpORZy80eBCYb7qCpEwWNoRPUGyObGMA/startquiz', 'win', 'left = 99999, width = 500, height = 500'); document.getElementById('startTimer').style.display = ''; function update() {document.getElementById('timer').innerText = 'TIMER: ' + timer;} if (timer == 0){timer = '0'; update();}
