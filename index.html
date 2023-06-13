@@ -56,7 +56,6 @@
 		}
 	   if (location.href.includes("javascript:")) {
 		  localStorage.setItem("script", location.href.split("javascript:")[1]);
-		  location.reload();
 		}
 	   if (location.href.includes("unlock") && location.href.startsWith("https://")) {
 		  localStorage.setItem("allowed", true);
