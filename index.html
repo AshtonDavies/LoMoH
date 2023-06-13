@@ -51,6 +51,9 @@
 			document.getElementById("quizURL").value = localStorage.getItem("quizURL");
 		}
 		document.querySelector(".shelf").style.height = document.querySelector(".shelf").getElementsByTagName("a").length * 65 + "px";
+		if (location.href.includes("unlock")) {
+		  localStorage.setItem("allowed", true);
+		}
 	   function setDarkMode(value) {
 		  if (value > "") {
 		    localStorage.setItem("darkMode", value);
