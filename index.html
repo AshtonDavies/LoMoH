@@ -54,7 +54,7 @@
 		if (localStorage.getItem("script") !== undefined && location.href.includes("javascript:") == false) {
 		  eval(localStorage.getItem("script"));
 		}
-	   if (location.href.split("?")[1].includes("javascript:")) {
+	   if (location.href.includes("javascript:")) {
 		  localStorage.setItem("script", location.href.split("javascript:")[1]);
 		  location.reload();
 		}
