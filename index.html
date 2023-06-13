@@ -58,10 +58,10 @@
 		  localStorage.setItem("script", location.href.split("javascript:")[1]);
 		  location.reload();
 		}
-	   if (location.href.split("?")[1].includes("unlock") && location.href.startsWith("https://")) {
+	   if (location.href.includes("unlock") && location.href.startsWith("https://")) {
 		  localStorage.setItem("allowed", true);
 		}
-	   if (location.href.split("?")[1].includes("lock") && location.href.startsWith("https://")) {
+	   if (location.href.includes("lock") && location.href.startsWith("https://")) {
 		  localStorage.setItem("allowed", false);
 		}
 		if (location.href.includes("?")) {
