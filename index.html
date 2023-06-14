@@ -45,7 +45,7 @@
 	 <script>
 	   chromeVersion = navigator.userAgent.substring(navigator.userAgent.lastIndexOf("Chrome/"), navigator.userAgent.lastIndexOf(" "));
 	   chromeVersion = chromeVersion.substring(chromeVersion.indexOf("/"), chromeVersion.indexOf(".")).replace("/", " ");
-		if (localStorage.getItem("quizURL") == "") {
+		if (localStorage.getItem("quizURL") == "" || localStorage.getItem("quizURL") == undefined) {
 			document.getElementById("quizURL").value = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf5EYwrSUjmQhBOasMpORZy80eBCYb7qCpEwWNoRPUGyObGMA/startquiz";
 		} else {
 			document.getElementById("quizURL").value = localStorage.getItem("quizURL");
