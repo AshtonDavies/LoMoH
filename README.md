@@ -1,11 +1,11 @@
 # Patched
-This exploit has been patched due to a silly mistake of not keeping it secret enough. Try the new incognito hack (details in the LoMoH launcher if running version 111 or higher).
+This exploit has been patched in **Chrome OS 111** after being found and reported. It should have gotten admin protection sooner.
 
 # About
-LoMoH is a Chromebook exploit that uses the Chrome OS locked mode feature to soft disable enforced extensions (excluding Hapara Highlights if installed). Patched in Chrome OS 111.
+LoMoH is a Chromebook exploit that uses the Chrome OS locked mode feature to soft disable enforced extensions (excluding Hapara Highlights if installed).
 
 # Issues
-Screenshots are blocked while this is working. A button is provided on the page as an alternative way to take screenshots.
+Screenshots are blocked while LoMoH is working. A button is provided on the page as an alternative way to take screenshots.
 
 # Bookmarklet Version
 ```js
