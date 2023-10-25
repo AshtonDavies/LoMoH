@@ -1,11 +1,13 @@
-# Patched
-This exploit has been patched in **Chrome OS 111** after being found and reported. It should have gotten admin protection sooner.
+# LoMoH
+Formerly named "Locked Mode Hack," this is a Chrome OS exploit that uses the locked mode feature to soft disable extensions that are force-enabled on managed accounts (Excluding Hapara Highlights and Read&Write if installed).
 
-# About
-LoMoH is a Chromebook exploit that uses the Chrome OS locked mode feature to soft disable enforced extensions (excluding Hapara Highlights if installed).
+# Patched
+LoMoH is patched in **Chrome OS 111** and later versions.
+
+With districts blocking javascript:// URLs to prevent the use of other exploits like LTBEEF, the website version of LoMoH was made, but it posed a vulnerability for web filters to send site traffic of the site to administrators.
 
 # Issues
-Screenshots are blocked while LoMoH is working. A button is provided on the page as an alternative way to take screenshots.
+Screenshots are blocked while LoMoH is working. The website has a screenshot button to help with this issue.
 
 # Bookmarklet Version
 ```js
